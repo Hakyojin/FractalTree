@@ -15,7 +15,7 @@ public void draw()
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
-	double angle1 = angle + branchAngle + mouseY;
+	double angle1 = angle + branchAngle - mouseY;
 	double angle2 = angle - branchAngle + mouseY; 
 	branchLength = branchLength*fractionLength;
 	int endX1 = (int)(branchLength*Math.cos(angle1) + x);
